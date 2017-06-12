@@ -3,11 +3,16 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	// 输入文件
-	entry: path.resolve(__dirname, './src/main.js'),
+	entry: {
+		'main': path.resolve(__dirname, './src/main.js'),
+		'cart': path.resolve(__dirname, './src/cart.js')
+
+	},
 	// 输出文件
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		filename: './js/[name]-bundle.js'
+		filename: './js/[name]-bundle.js',
+		// publicPath: '/static/'
 	},
 	resolve: {
         extensions: ['.js', '.vue'],
@@ -28,6 +33,15 @@ module.exports = {
 				query: {
 					presets: ['es2015']
 				}
+			},
+			{
+				test: /\.(png|jpg)$/,
+				loader: 'url-loader?limit=9819&name=img/[name].[ext]'
+				// loader: 'file-loader'
+			},
+			{
+				test:/\.css$/,
+				loader: 'style-loader!css-loader'
 			}
 		]
 	},
@@ -35,8 +49,15 @@ module.exports = {
 		new htmlWebpackPlugin({
 			filename: 'index.html',
 			template: path.resolve(__dirname, './index.html'),
-			inject: 'body'
+			inject: 'body',
+			chunks: ['main']
 		}),
+		new htmlWebpackPlugin({
+			filename: 'cart.html',
+			template: path.resolve(__dirname, './cart.html'),
+			inject: 'body',
+			chunks: ['cart']
+		})
 	],
 	devServer: {
 	  contentBase: path.join(__dirname, "dist"),

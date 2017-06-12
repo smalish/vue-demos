@@ -8,127 +8,57 @@
 	</head>
 	<body id="cart">
 		<div id="app" style="width: 100%;height: 100%;">
-			<header>购物车{{message}}</header>
-			<ul class="list">
-				<li class="item">
-					<div class="left">
-						<span class="select_icon"></span>
-						<img class="p_img" src="images/product.png">
-					</div>
-					<div class="right">
-						<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
-						<div class="p_price">￥299.00</div>
-						<div class="edit_div">
-							<div class="num_div">
-								<span class="add_num">+</span>
-								<input class="num_input" type="number" name="num" value="1">
-								<span class="sub_num">-</span>
-							</div>
-							<div class="delet_icon"></div>
-						</div>
-					</div>			
-				</li>
-				<li class="item">
-					<div class="left">
-						<span class="select_icon"></span>
-						<img class="p_img" src="images/product.png">
-					</div>
-					<div class="right">
-						<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
-						<div class="p_price">￥299.00</div>
-						<div class="edit_div">
-							<div class="num_div">
-								<span class="add_num">+</span>
-								<input class="num_input" type="number" name="num" value="1">
-								<span class="sub_num">-</span>
-							</div>
-							<div class="delet_icon"></div>
-						</div>
-					</div>			
-				</li>
-				<li class="item">
-					<div class="left">
-						<span class="select_icon"></span>
-						<img class="p_img" src="images/product.png">
-					</div>
-					<div class="right">
-						<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
-						<div class="p_price">￥299.00</div>
-						<div class="edit_div">
-							<div class="num_div">
-								<span class="add_num">+</span>
-								<input class="num_input" type="number" name="num" value="1">
-								<span class="sub_num">-</span>
-							</div>
-							<div class="delet_icon"></div>
-						</div>
-					</div>			
-				</li>
-				<li class="item">
-					<div class="left">
-						<span class="select_icon"></span>
-						<img class="p_img" src="images/product.png">
-					</div>
-					<div class="right">
-						<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
-						<div class="p_price">￥299.00</div>
-						<div class="edit_div">
-							<div class="num_div">
-								<span class="add_num">+</span>
-								<input class="num_input" type="number" name="num" value="1">
-								<span class="sub_num">-</span>
-							</div>
-							<div class="delet_icon"></div>
-						</div>
-					</div>			
-				</li>
-				<li class="item">
-					<div class="left">
-						<span class="select_icon"></span>
-						<img class="p_img" src="images/product.png">
-					</div>
-					<div class="right">
-						<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
-						<div class="p_price">￥299.00</div>
-						<div class="edit_div">
-							<div class="num_div">
-								<span class="add_num">+</span>
-								<input class="num_input" type="number" name="num" value="1">
-								<span class="sub_num">-</span>
-							</div>
-							<div class="delet_icon"></div>
-						</div>
-					</div>			
-				</li>
-				<li class="item">
-					<div class="left">
-						<span class="select_icon"></span>
-						<img class="p_img" src="images/product.png">
-					</div>
-					<div class="right">
-						<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
-						<div class="p_price">￥299.00</div>
-						<div class="edit_div">
-							<div class="num_div">
-								<span class="add_num">+</span>
-								<input class="num_input" type="number" name="num" value="1">
-								<span class="sub_num">-</span>
-							</div>
-							<div class="delet_icon"></div>
-						</div>
-					</div>			
-				</li>
-			</ul>
+      <header>购物车{{message}}</header>
+	    <ul class="list">
+  			<li class="item" v-for="(item, index) in cartData.list">
+  				<div class="left">
+  					<span class="select_icon" v-on:click="toggleSelect" v-bind:data-index="index" v-bind:class="{selected: item.selected}"></span>
+  					<img class="p_img" v-bind:src="item.image">
+  				</div>
+  				<div class="right">
+  					<div class="p_name">{{item.name}}</div>
+  					<div class="p_price">￥{{item.price}}</div>
+  					<div class="edit_div">
+  						<div class="num_div">
+  							<span class="add_num" v-on:click="addNum(index)">+</span>
+  							<input class="num_input" type="number" name="num" v-bind:value="item.number">
+  							<span class="sub_num" v-on:click="subNum(index)">-</span>
+  						</div>
+  						<div class="delet_icon"></div>
+  					</div>
+  				</div>
+  			</li>
 
-			<div class="footer" id="footer">
-				<div class="left">
-					<span class="select_all"></span>全选{{message}}
-				</div>
-				<div class="right">
-					<div class="toBuy">结算（0）</div>
-					<div class="sum_price">合计：<span>￥199.00</span></div>
-				</div>
+  			<!-- <li class="item">
+  				<div class="left">
+  					<span class="select_icon"></span>
+  					<img class="p_img" src="images/product.png">
+  				</div>
+  				<div class="right">
+  					<div class="p_name">ZARA女装双口袋饰条纹罩衫长纹罩衫 09479043044</div>
+  					<div class="p_price">￥299.00</div>
+  					<div class="edit_div">
+  						<div class="num_div">
+  							<span class="add_num">+</span>
+  							<input class="num_input" type="number" name="num" value="1">
+  							<span class="sub_num">-</span>
+  						</div>
+  						<div class="delet_icon"></div>
+  					</div>
+  				</div>
+  			</li> -->
+  	
+		</ul>
+
+		  <div class="footer" id="footer">
+			<div class="left">
+				<span class="select_all"  v-bind:class="{selected: isALLSelected}"></span>全选
 			</div>
+			<div class="right">
+				<div class="toBuy">结算（{{totalNumber}}）</div>
+				<div class="sum_price">合计：<span>￥{{totalMoney}}</span></div>
+			</div>
+		</div>
 		</div>
 		<!-- 引入vue.js -->
 		<script type="text/javascript" src="js/vue.js"></script>

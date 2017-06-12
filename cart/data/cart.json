@@ -1,18 +1,16 @@
 {
-	"list": [{
-			"id": 111,
-			"name": "http://img3x4.ddimg.cn/30/1/24566484-1_b_3.jpg",
-			"image": "http://img3x4.ddimg.cn/30/1/24566484-1_b_3.jpg",
-			"price": 111.00,
-			"number": 1,
-			"selected": false
-		},
-		{
-			"id": 222,
-			"name": "寻找时间的人（与《追风筝的人》《偷书贼》共同荣获美国年度最佳读物）",
-			"image": "http://img3x8.ddimg.cn/13/30/24188188-1_b_3.jpg",
-			"price": 222.00,
-			"number":1,
-			"selected": false
-		}]
+  "totalNunber": 10,
+  "list":[{
+    "name": "半小时漫画中国史（预售期间领券下单立减5元，数量有限，先到先得！当当独家赠送二混子签绘明信片，其实是一本严谨的极简中国史）",
+    "price":"111.00",
+    "image": "http://img3x0.ddimg.cn/12/14/24242340-1_b_6.jpg",
+    "number": 1,
+    "selected": true,
+  },{
+    "name": "寻找时间的人（与《追风筝的人》《偷书贼》共同荣获美国年度最佳读物）",
+    "price": "222.00",
+    "image": "http://img3x8.ddimg.cn/13/30/24188188-1_b_3.jpg",
+    "number": 1,
+    "selected": false,
+  }]
 }

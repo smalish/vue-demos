@@ -16,8 +16,8 @@ export default {
     },
     methods: {
     	childEvent: function(){
-    		console.log('childEvent');
-    		this.$emit('childEvent');
+    		console.log('childevent');
+    		this.$emit('childevent');
     	}
     }
 }
