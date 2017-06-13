@@ -1,6 +1,5 @@
 <template id="cart-index">
   <div>
-      <!-- <img src="../../images/product.png"> -->
       <header>购物车{{message}}</header>
 	    <ul class="list">
   			<li class="item" v-for="(item, index) in cartData.list">
@@ -148,32 +147,9 @@
         }
       }
   }
+
+
+  import './index.css';
+
 </script>
 
-<style>
-  *{margin: 0px; padding: 0px;border: 0;}
-  html{font-size:20px;background-color: rgb(255,255,255);}
-  header{display: block;position: fixed;top: 0rem;width: 100%;height: 2rem;line-height: 2rem;background-color: white;font-size: .8rem;text-align: center;}
-  .list{margin-top: 2rem;}
-  .item{display: block;padding: 0rem 1rem 2rem 1rem;overflow: hidden;}
-  .item .left{display: flex;align-items: center;float: left;overflow: hidden;width: 43%;}
-  .item .select_icon{display: block;float: left;width: .9rem;height: .9rem;border: 1px solid rgb(159,159,159);border-radius: 2rem;}
-  .item .selected, .footer .left .selected{background-color: rgb(255,83,91);}
-  .item .p_img{display: block;float: left;width: 72%;margin-left: .5rem;}
-  .item .right{display: block;float: left;overflow: hidden;width: 56%;}
-  .item .right .p_name{font-size: 12px;color:rgb(50,50,50);line-height:.875rem; margin-left: .5rem;height: 2.625rem;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;text-overflow: ellipsis;overflow: hidden;}
-  .item .right .p_price{font-size: 12px;color: rgb(255,40,50);line-height: 1.2rem; margin-left: .5rem;}
-  .item .right .edit_div{overflow: hidden; margin-left: .5rem;padding-top: .3rem;}
-  .edit_div .num_div{float: left;overflow: hidden;border: 1px solid rgb(159,159,159);border-radius: .2rem;font-size: 12px;line-height: .8rem;text-align: center;}
-  .edit_div .num_div .add_num,.edit_div .num_div .sub_num{display: block;float: left;width: .8rem;height: .8rem;line-height: .8rem;}
-  .edit_div .num_div .num_input{display: block;float: left;width: 1rem;height: .8rem;text-align: center;border-left: 1px solid rgb(159,159,159);border-right: 1px solid rgb(159,159,159);}
-  .edit_div .num_div .sub_num{}
-  .edit_div .delet_icon{display: block;float: right;width: 1rem;height: 1rem;/*background-image:url(../../images/edit.png);*/ background-repeat: no-repeat;background-size: 100% 100%;}
-  .footer{display: block;position: fixed;z-index: 9;bottom: 0;left: 0;overflow: hidden;width:100%;height: 2.25rem;background: rgb(255,255,255);font-size: 12px;line-height: 2.25rem;color: rgb(50,50,50);}
-  .footer .left{float: left;}
-  .footer .left .select_all{display: block;float: left;margin: .6rem .25rem auto .5rem;width: .9rem;height: .9rem;border: 1px solid rgb(159,159,159);border-radius: .9rem;}
-  .footer .right{float: right;overflow: hidden;}
-  .footer .right .toBuy{width: 4.75rem;height: 2.25rem;float: right;background-color: rgb(255,83,91);color: rgb(255,255,255);text-align: center;}
-  .footer .right .sum_price{float: right;color: rgb(50,50,50);margin-right: .25rem; }
-  .footer .sum_price span{color:rgb(255,83,91);}
-</style>
