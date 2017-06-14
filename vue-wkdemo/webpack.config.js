@@ -39,9 +39,14 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(png|jpg)$/i,
-				loader: 'url-loader'
+<
+				test: /\.(png|jpg)$/,
+				loader: 'file-loader',
 				// loader: 'file-loader',
+				query: {
+					limit: 20000,
+					name: 'img/[name].[ext]'
+				}
 			},
 			{
 				test:/\.css$/,
