@@ -39,7 +39,6 @@ module.exports = {
 				}
 			},
 			{
-<
 				test: /\.(png|jpg)$/,
 				loader: 'file-loader',
 				// loader: 'file-loader',
@@ -51,6 +50,10 @@ module.exports = {
 			{
 				test:/\.css$/,
 				loader: 'style-loader!css-loader'
+			},
+			{
+				test: /\.less/,
+				loader: 'less-loader'
 			}
 		]
 	},

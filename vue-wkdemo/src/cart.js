@@ -13,13 +13,15 @@ window.onload = function () {
   new Vue({
       el: '#app',
       data: {
-      	childTitle: '组件标题'
+      	cartTitle: '标题'
       },
       components: {
         'my-component': cartTemp
       },
       methods: {
-      	
+      	f_event: function(){
+          alert('父组件');
+        }
       }
 
   });

@@ -29,7 +29,7 @@
   			</div>
   			<div class="right">
   				<div class="toBuy">结算（{{totalNumber}}）</div>
-  				<div class="sum_price">合计：<span>￥{{totalMoney}}</span></div>
+  				<div class="sum_price" v-on:click="c_event">合计：<span>￥{{totalMoney}}</span></div>
   			</div>
 		</div>
   </div>
@@ -144,6 +144,10 @@
         subNum: function(index){
           this.cartData.list[index].number--;
           console.log('sub');
+        },
+        c_event: function(){
+          alert('子组件');
+          this.$emit('c_event');
         }
       }
   }
