@@ -10232,7 +10232,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(16)(content, options);
+var update = __webpack_require__(17)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10256,13 +10256,13 @@ if(false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(21)
+  __webpack_require__(22)
 }
 var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(10),
   /* template */
-  __webpack_require__(19),
+  __webpack_require__(20),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -10270,7 +10270,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "G:\\webpack\\vue-git\\vue-demos\\vue-wkdemo\\src\\components\\cart\\index.vue"
+Component.options.__file = "D:\\myTest\\vue\\vue-demos\\vue-wkdemo\\src\\components\\cart\\index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -10518,13 +10518,19 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "html{background-color: white;}\r\n.myTitle{background-image: url(" + __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../images/product.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())) + ");\r\n\tbackground-size: 100px 100px;\r\n    width: 100px;\r\n    height: 100px;}", ""]);
+exports.push([module.i, "html{background-color: white;}\r\n.myTitle{background-image: url(" + __webpack_require__(16) + ");\r\n\tbackground-size: 100px 100px;\r\n    width: 100px;\r\n    height: 100px;}", ""]);
 
 // exports
 
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4e23e8f413376ec1de5a6327667c788e.png";
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -10570,7 +10576,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(17);
+var	fixUrls = __webpack_require__(18);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -10883,7 +10889,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 
@@ -10978,16 +10984,12 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 18 */,
-/* 19 */
+/* 19 */,
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('img', {
-    attrs: {
-      "src": __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../images/product.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
-    }
-  }), _vm._v(" "), _c('header', [_vm._v("购物车" + _vm._s(_vm.message))]), _vm._v(" "), _c('ul', {
+  return _c('div', [_c('header', [_vm._v("购物车" + _vm._s(_vm.message))]), _vm._v(" "), _c('ul', {
     staticClass: "list"
   }, _vm._l((_vm.cartData.list), function(item, index) {
     return _c('li', {
@@ -11075,8 +11077,8 @@ if (false) {
 }
 
 /***/ }),
-/* 20 */,
-/* 21 */
+/* 21 */,
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag

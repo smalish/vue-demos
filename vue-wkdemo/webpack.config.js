@@ -23,6 +23,10 @@ module.exports = {
 	module: {
 		loaders: [
 			{
+				test: /\.html$/,
+				loader: 'html-loader'
+			},
+			{
 				test: /\.vue$/,
 				loader: 'vue-loader'
 			},
@@ -35,9 +39,9 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(png|jpg)$/,
-				loader: 'url-loader?limit=9819&name=img/[name].[ext]'
-				// loader: 'file-loader'
+				test: /\.(png|jpg)$/i,
+				loader: 'url-loader'
+				// loader: 'file-loader',
 			},
 			{
 				test:/\.css$/,

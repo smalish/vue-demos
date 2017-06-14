@@ -10225,13 +10225,13 @@ module.exports = g;
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(20)
+  __webpack_require__(21)
 }
 var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(9),
   /* template */
-  __webpack_require__(18),
+  __webpack_require__(19),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -10239,7 +10239,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "G:\\webpack\\vue-git\\vue-demos\\vue-wkdemo\\src\\components\\Favlist.vue"
+Component.options.__file = "D:\\myTest\\vue\\vue-demos\\vue-wkdemo\\src\\components\\Favlist.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Favlist.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -10364,7 +10364,8 @@ exports.push([module.i, "\nbody {\r\n    color: red;\n}\r\n", ""]);
 /* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */
+/* 18 */,
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -10399,8 +10400,8 @@ if (false) {
 }
 
 /***/ }),
-/* 19 */,
-/* 20 */
+/* 20 */,
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
