@@ -6,10 +6,10 @@
         <title>首页</title>
     </head>
     <body>
-        <p class="title">一行文字</p>
         <div id="app">
-            <my-component :message="childTitle" v-on:childevent="myevent"></my-component>
-            <!-- <child1-component :some="childTitle"></child1-component> -->
+            <transition :name="transitionName">  
+                <rounter-view></rounter-view>
+            </transition>  
         </div>
     </body>
 </html>

@@ -4,13 +4,12 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	// 输入文件
 	entry: {
-		'main': path.resolve(__dirname, './src/main.js'),
-		'cart': path.resolve(__dirname, './src/cart.js')
+		'main': path.resolve(__dirname, './src/main.js')
 
 	},
 	// 输出文件
 	output: {
-		path: path.resolve(__dirname, './dist'),
+		path: path.resolve(__dirname, './build'),
 		filename: './js/[name]-bundle.js',
 		// publicPath: '/static/'
 	},
@@ -59,16 +58,10 @@ module.exports = {
 			template: path.resolve(__dirname, './index.html'),
 			inject: 'body',
 			chunks: ['main']
-		}),
-		new htmlWebpackPlugin({
-			filename: 'cart.html',
-			template: path.resolve(__dirname, './cart.html'),
-			inject: 'body',
-			chunks: ['cart']
 		})
 	],
 	devServer: {
-	  contentBase: path.join(__dirname, "dist"),
+	  contentBase: path.join(__dirname, "build"),
 	  hot: true,
 	  port: 9000
 	}

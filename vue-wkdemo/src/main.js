@@ -1,6 +1,6 @@
 import Vue from 'Vue'
 import Favlist from './components/Favlist.vue'
-
+import commonStyle from './css/common.less'
 
 Vue.config.debug = true;//开启错误提示
 
