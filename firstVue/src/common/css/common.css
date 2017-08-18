@@ -1,0 +1,11 @@
+img {
+	display: block;
+	width: 80%;
+	margin: 0 auto 0.2rem;
+}
+p {
+	font-size: 14px;
+	line-height: 0.5rem;
+	text-align: justify;
+	padding-bottom: 0.24rem;
+}

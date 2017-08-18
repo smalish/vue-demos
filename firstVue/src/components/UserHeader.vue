@@ -1,6 +1,6 @@
 <template>
 	<div class="userHeader">
-		<router-link to="/userDetail" >
+		<router-link to="/user" >
 			<div class="user_div"><img src="http://img7x2.ddimg.cn/imghead/9/25/1021969521252-1_e.png?1502764762"></div>
 		</router-link>
 		<!-- 由于html不区分大小写，所以js中驼峰命名方式在html中要改成用短横线连接的形式 -->
@@ -9,6 +9,8 @@
 
 <style>
 	.userHeader{
+		padding-top: 1.2rem;
+		padding-bottom: .2rem;
 		max-width: 640px;
 		margin: 0 auto;
 		overflow-x: hidden;

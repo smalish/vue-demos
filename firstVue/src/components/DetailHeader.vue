@@ -22,7 +22,7 @@
 		flex: 1;
 	}
 	.header {
-		height: 0.88rem;
+		/*height: 0.88rem;*/
 	}
 	.header_inner {
 		position: fixed;
