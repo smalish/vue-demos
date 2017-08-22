@@ -1,11 +1,9 @@
 <template>
 	<div>
-		<p>用户详情</p>
-		<p>{{name + ': ' + type}}</p>
-		<span v-once>{{ msg }}</span>
-		<input v-model="msg" type="" name="" value="">
-		<div v-html="rawHtml"></div>
-		<div v-bind:id="id" v-bind:class="myclass">lllllllll</div>
+		<p>用户主页</p>
+		<router-link to="info">跳转到用户详情</router-link>
+		<router-link to="/user/comp1">显示视图1</router-link>
+		<router-view></router-view>
 	</div>
 </template>
 
@@ -22,8 +20,16 @@
 				msg: '不变',
 				rawHtml: '<div>html字符串</div>',
 				id: 'mydiv',
-				myclass: 'myclass'
+				myclass: 'myclass',
+				message: 'hello'
 			}
+		},
+		filters: {
+		    capitalize: function (value) {
+		      if (!value) return ''
+		      value = value.toString()
+		      return value.charAt(0).toUpperCase() + value.slice(1)
+		    }
 		},
 		components:{
 

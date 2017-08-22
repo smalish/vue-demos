@@ -3,7 +3,7 @@ img {
 	width: 80%;
 	margin: 0 auto 0.2rem;
 }
-p {
+p,a {
 	font-size: 14px;
 	line-height: 0.5rem;
 	text-align: justify;

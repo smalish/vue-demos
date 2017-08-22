@@ -11,6 +11,10 @@ Vue.use(VueRouter)
 import Home from './pages/Home'
 import Detail from './pages/Detail'
 import User from './pages/User'
+import UserInfo from './pages/UserInfo'
+
+import UserHome from './components/UserHome'
+import UserComp1 from './components/UserComp1'
 
 // 定义路由配置
 const routes = [
@@ -24,11 +28,15 @@ const routes = [
 	},
   {
     path: '/user',
-    component: User
+    component: User,
+    children: [
+      {path: '', component: UserHome},
+      {path:'comp1', component: UserComp1}
+    ]
   },
   {
-    path: '/user',
-    component: User
+    path: '/user/info',
+    component: UserInfo
   }
 ]
 
