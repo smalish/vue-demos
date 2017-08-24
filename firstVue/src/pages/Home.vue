@@ -2,8 +2,9 @@
 <template>
 	<div class="container">
 		<!-- 由于html不区分大小写，所以js中驼峰命名方式在html中要改成用短横线连接的形式 -->
-		<user-header></user-header>
+		<!-- <user-header></user-header>
 		<home-header></home-header>
+
 		<div class="content">
 			<ul class="cont_ul">
 				<list
@@ -11,8 +12,11 @@
 					:price="item.price"
 					:title="item.title">
 				</list>
-			</ul>
-		</div>
+			</ul>			
+		</div> -->
+		<router-view></router-view>
+		<!-- 页底组件 -->
+		<home-footer></home-footer>
 	</div>
 </template>
 <style>
@@ -37,6 +41,7 @@
 	// 导入要用到的子组件
 	import UserHeader from '../components/UserHeader'
 	import HomeHeader from '../components/HomeHeader'
+	import HomeFooter from '../components/HomeFooter'
 	import List from '../components/List'
 
 	export default {
@@ -58,7 +63,8 @@
 		components: {
 			UserHeader,
 			HomeHeader,
-			List
+			List,
+			HomeFooter
 		}
 	}
 </script>

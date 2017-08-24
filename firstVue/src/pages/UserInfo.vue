@@ -12,18 +12,12 @@
 	export default{
 		data(){
 			return {
-				name: '小明',
-				type: '编辑',
-				msg: '不变',
-				rawHtml: '<div>html字符串</div>',
-				id: 'mydiv',
-				myclass: 'myclass',
-				message: 'hello'
+				
 			}
 		},
 		filters: {
 		    capitalize: function (value) {
-		      if (!value) return ''
+		      if (!value) return 
 		      value = value.toString()
 		      return value.charAt(0).toUpperCase() + value.slice(1)
 		    }

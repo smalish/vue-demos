@@ -16,11 +16,20 @@ import UserInfo from './pages/UserInfo'
 import UserHome from './components/UserHome'
 import UserComp1 from './components/UserComp1'
 
+import HomePage from './components/home/HomePage'
+import NearPage from './components/near/NearPage'
+
+
 // 定义路由配置
 const routes = [
 	{
 		path: '/',
-		component: Home
+		component: Home,
+    children:[
+      {path: '', component: HomePage},
+      {path:'home', component: HomePage},
+      {path:'near', component: NearPage},
+    ]
 	},
 	{
 		path: '/detail',
