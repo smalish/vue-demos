@@ -2,7 +2,6 @@
 
 // 导入Vue，这个是必需的，在使用Vue之前，必须先导入
 import Vue from 'vue'
-
 // 导入 vue-router，并使用
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)

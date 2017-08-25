@@ -67,11 +67,6 @@
 		}
 	}
 </script>
-<style>
-	.footer{display: block;width: 100%;height: 4.85rem;overflow: hidden;border-top: 1px solid #b7b7b7;background-color: #ffffff;position: fixed;bottom: 0rem;left: 0rem;}
-	.footer .item{float: left;display: block;height: 100%}
-	.item .item_div{width: 100%;}
-	.item .item_div .img{display: block;width: 2.35rem;height: 2.35rem;margin: 0 auto;margin-top: .65rem;}
-	.item .item_div .text{display: block;width: 100%;line-height: 1.8rem;color: #a19e96;text-align: center;font-size: .6rem;}
-	.selected .item_div .text{color:#06c1ad;}
+<style lang='less'>
+	@import '../assets/css/HomeFooter.less';
 </style>
