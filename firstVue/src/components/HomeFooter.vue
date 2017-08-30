@@ -18,25 +18,25 @@
 				list: [{
 					name:'首页',
 					imgSrc:  require('../assets/img/footer/home.png'),
-					imgSelected: require('../assets/img/footer/userSelected.png'),
+					imgSelected: require('../assets/img/footer/homeSelected.png'),
 					selected: true,
 					page: 'home'
 				},{
 					name:'附近',
 					imgSrc: require('../assets/img/footer/near.png'),
-					imgSelected: require('../assets/img/footer/userSelected.png'),
+					imgSelected: require('../assets/img/footer/nearSelected.png'),
 					selected: false,
 					page: 'near'
 				},{
 					name:'逛一逛',
 					imgSrc: require('../assets/img/footer/shopping.png'),
-					imgSelected: require('../assets/img/footer/userSelected.png'),
+					imgSelected: require('../assets/img/footer/shoppingSelected.png'),
 					selected: false,
 					page: 'near'
 				},{
 					name:'订单',
 					imgSrc: require('../assets/img/footer/order.png'),
-					imgSelected: require('../assets/img/footer/userSelected.png'),
+					imgSelected: require('../assets/img/footer/orderSelected.png'),
 					selected: false,
 					page: 'near'
 				},{

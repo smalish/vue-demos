@@ -1,5 +1,8 @@
 <template>
 	<div class="userHeader">
+		<div class="header">
+			<img class="img" v-bind:src="headerImg" alt="">
+		</div>
 		<p>首页</p>
 	</div>
 </template>
@@ -13,8 +16,8 @@
 		overflow-x: hidden;
 		font-size: 14px;
 		}
-	.userHeader .user_div{height:40px;}
-	.userHeader .user_div img{display:block;width:40px;height:40px;border-radius:20px;margin:0 auto;}
+	.userHeader .header{width: 100%;}
+	.header .img{display: block;width: 100%;}
 
 </style>
 
@@ -23,7 +26,7 @@
 	export default{
 		data() {
 			return {
-
+				headerImg: require('../../assets/img/home/header.png')
 			}
 		},
 		components: {
