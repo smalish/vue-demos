@@ -2,6 +2,11 @@
 
 // 导入Vue，这个是必需的，在使用Vue之前，必须先导入
 import Vue from 'vue'
+
+// Vue.component('swipe', Swipe);
+// Vue.component('swipe-item', SwipeItem);
+
+
 // 导入 vue-router，并使用
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
@@ -62,6 +67,7 @@ new Vue({
   	}
   },
   router,
+  
   watch: {
   	// 监视路由，参数为要目标路由和当前页面的路由
   	'$route' (to, from){
