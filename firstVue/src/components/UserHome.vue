@@ -4,8 +4,8 @@
 	</div>
 </template>
 
-<style>
-	.userHeader{
+<style scoped>
+	.userHeader_user{
 		padding-top: 1.2rem;
 		padding-bottom: .2rem;
 		max-width: 640px;

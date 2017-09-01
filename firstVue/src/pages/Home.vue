@@ -19,23 +19,13 @@
 		<home-footer></home-footer>
 	</div>
 </template>
-<style>
+<style scoped>
 	.container {
 		max-width: 640px;
 		margin: 0 auto;
 		overflow-x: hidden;
 	}
-	.cont_ul {
-		padding-top: 0.05rem;
-		margin: 0 -0.12rem;
-	}
-	.cont_ul:after {
-		content: "";
-		display: block;
-		width: 0;
-		height: 0;
-		clear: both;
-	}
+	
 </style>
 <script>
 	// 导入要用到的子组件

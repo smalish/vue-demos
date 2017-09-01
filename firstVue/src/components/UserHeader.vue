@@ -7,7 +7,7 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 	.userHeader{
 		padding-top: 1.2rem;
 		padding-bottom: .2rem;

@@ -4,9 +4,9 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 	.userHeader{
-		padding-top: 1.2rem;
+		padding-top: 1.22222222222rem;
 		padding-bottom: .2rem;
 		max-width: 640px;
 		margin: 0 auto;
