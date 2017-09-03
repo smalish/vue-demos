@@ -12,45 +12,28 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 // 导入 pages 下的 Home.vue 
-import Home from './pages/Home'
-import Detail from './pages/Detail'
-import User from './pages/User'
-import UserInfo from './pages/UserInfo'
+import Index from './pages/Index'
 
-import UserHome from './components/UserHome'
-import UserComp1 from './components/UserComp1'
+import HomePage from './pages/home/HomePage'
+import NearPage from './pages/near/NearPage'
+import ShoppingPage from './pages/shopping/ShoppingPage'
 
-import HomePage from './components/home/HomePage'
-import NearPage from './components/near/NearPage'
 
 
 // 定义路由配置
 const routes = [
 	{
 		path: '/',
-		component: Home,
+		component: Index,
     children:[
       {path: '', component: HomePage},
       {path:'home', component: HomePage},
       {path:'near', component: NearPage},
+      {path:'shopping', component: ShoppingPage},
+
     ]
-	},
-	{
-		path: '/detail',
-		component: Detail
-	},
-  {
-    path: '/user',
-    component: User,
-    children: [
-      {path: '', component: UserHome},
-      {path:'comp1', component: UserComp1}
-    ]
-  },
-  {
-    path: '/user/info',
-    component: UserInfo
-  }
+	}
+  
 ]
 
 // 创建路由实例

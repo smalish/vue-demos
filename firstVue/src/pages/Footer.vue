@@ -32,7 +32,7 @@
 					imgSrc: require('../assets/img/footer/shopping.png'),
 					imgSelected: require('../assets/img/footer/shoppingSelected.png'),
 					selected: false,
-					page: 'near'
+					page: 'shopping'
 				},{
 					name:'订单',
 					imgSrc: require('../assets/img/footer/order.png'),
