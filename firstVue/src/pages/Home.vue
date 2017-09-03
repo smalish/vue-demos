@@ -1,6 +1,7 @@
 <!-- Home.vue -->
 <template>
 	<div class="container">
+
 		<!-- 由于html不区分大小写，所以js中驼峰命名方式在html中要改成用短横线连接的形式 -->
 		<!-- <user-header></user-header>
 		<home-header></home-header>
@@ -21,9 +22,7 @@
 </template>
 <style scoped>
 	.container {
-		max-width: 640px;
-		margin: 0 auto;
-		overflow-x: hidden;
+		
 	}
 	
 </style>

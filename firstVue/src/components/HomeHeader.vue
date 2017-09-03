@@ -7,7 +7,7 @@
 	</header>
 </template>
 
-<style>
+<style scoped>
 	.header {
 		/*height: 0.88rem;*/
 	}

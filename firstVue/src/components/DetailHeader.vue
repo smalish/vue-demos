@@ -13,7 +13,7 @@
 	</header>
 </template>
 
-<style>
+<style scoped>
 	.flexWrap {
 		display: -webkit-flex;
 		display: flex;

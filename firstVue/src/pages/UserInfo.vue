@@ -4,7 +4,7 @@
 	</div>
 </template>
 
-<style type="text/css">
+<style scoped type="text/css">
 	 @import '../common/css/common.css';
 </style>
 
