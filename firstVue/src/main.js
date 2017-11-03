@@ -26,7 +26,7 @@ const routes = [
 		path: '/',
 		component: Index,
     children:[
-      {path: '', component: HomePage},
+      {path: '', component: NearPage},
       {path:'home', component: HomePage},
       {path:'near', component: NearPage},
       {path:'shopping', component: ShoppingPage},
