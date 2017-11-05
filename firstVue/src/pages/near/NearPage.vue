@@ -8,7 +8,7 @@
 		</div>
 		<!-- 菜单模块结束 -->
 
-		<div class="contain">yy1111111111111111111111111</div>
+		<div class="contain">22222222222222222</div>
 
 
 	</div>
@@ -19,8 +19,8 @@
 	.nearPage{position: relative;}
 	.nearPage .menuDiv{display: block;overflow-y: scroll;position: fixed;left:0;top:0;width: 6rem;}
 	.nearPage .menuList{display: block;background-color: #eee;border-right: 1px solid #eee;text-align: center;
-		-webkit-transition-property:all; 
-	    -webkit-transition-duration:0.5s; 
+		-webkit-transition-property:all;
+	    -webkit-transition-duration:0.5s;
 	    -webkit-transition-timing-function:ease-in;
 	    transform: translateY(0px);
 	}
@@ -31,7 +31,7 @@
 </style>
 
 <script>
-	
+
 	export default{
 		data() {
 			return {
@@ -112,9 +112,9 @@
 				}else if(clientY < 0){
 					clientY = 0;
 				}
-				
+
 				that.setPosition(clientY);
-				
+
 			},
 			// 设置菜单位置
 			setPosition: function(clientY){
@@ -129,7 +129,7 @@
 					'-o-transform':'translateY('+ -clientY +'px)',	/* Opera */
 				}
 
-				
+
 				console.log('clientY: ' + clientY);
 			}
 
